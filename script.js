@@ -1,7 +1,7 @@
 // count variable
 let count = 0;
 
-// denounce function
+// debounce function
 const debounce = (fn, delay) => {
   let timerId;
   return () => {
