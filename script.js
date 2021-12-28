@@ -4,9 +4,9 @@ let count = 0;
 // debounce function
 const debounce = (fn, delay) => {
   let timerId;
-  return () => {
+  return function (...args) {
     clearInterval(timerId);
-    timerId = setTimeout(() => fn(), delay);
+    timerId = setTimeout(() => fn(...args), delay);
   };
 };
 
