@@ -10,7 +10,7 @@ const debounce = (fn, delay) => {
   };
 };
 
-// incrementCound function
+// incrementCount function
 const incrementCount = () => console.log(count++);
 
 // make incementCount a debounce
